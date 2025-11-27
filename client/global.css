@@ -105,9 +105,28 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
   }
 
-  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  :where(p, span, li, a, button, label, td, th) {
     overflow-wrap: anywhere;
     word-break: break-word;
   }
